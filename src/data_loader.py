@@ -7,19 +7,19 @@ from src.config import TRAIN_PATH, VALID_PATH, IMG_SIZE, BATCH_SIZE
 import os
 
 def create_dataloaders():
-    """
-    Creates and returns the training and validation DataLoaders.
-    """
-    # 1. Define Transformations (Augmentation for train, simple resize/tensor for validation)
+
+    # 1. Define Transformations 
     train_transforms = transforms.Compose([
+        # IMG_SIZE is now 300
         transforms.Resize((IMG_SIZE, IMG_SIZE)),
         transforms.RandomRotation(20),
         transforms.RandomHorizontalFlip(),
-        transforms.ToTensor(),             # Converts image to a PyTorch tensor (and scales to 0-1)
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]) # ImageNet normalization
+        transforms.ToTensor(),              
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]) 
     ])
 
     val_transforms = transforms.Compose([
+        # IMG_SIZE is now 300
         transforms.Resize((IMG_SIZE, IMG_SIZE)),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])

@@ -6,7 +6,7 @@ from pathlib import Path
 
 # --- GLOBAL CONFIGURATION ---
 BATCH_SIZE = 32
-IMG_SIZE = 224
+IMG_SIZE = 300
 EPOCHS = 20
 
 # --- DEVICE CONFIGURATION ---
