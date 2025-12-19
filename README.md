@@ -15,6 +15,7 @@ plant-disease-classifier/
 │     ├── train/
 │     └── valid/
 | └── test
+| └── app.py
 └── README.md
 
 to run: & "C:/Program Files/Python311/python.exe" -m src.train

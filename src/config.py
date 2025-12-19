@@ -39,3 +39,7 @@ if __name__ == '__main__':
     print(f"Using device: {DEVICE}")
     print(f"Base Directory: {BASE_DIR}")
     print(f"Data Path: {DATA_PATH}")
+
+# --- VISUALIZATION CONFIG ---
+# For EfficientNetB3, the last convolutional layer is in the 'features' block at index 8
+LAST_CONV_LAYER_NAME = 'features.8'

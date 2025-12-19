@@ -1,2 +1,4 @@
 data/
 __pycache__/
+notebook_utlils/__pycache__/
+src/__pycache__/
