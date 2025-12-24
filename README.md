@@ -24,3 +24,4 @@ dataset link: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-datas
 
 first we were using MobileNetV2 architechture of CNN which was giving train accuracy of 89% 
 in second try we used EfficientNet_B3 which improve train accuracy to 91.88% and give validation accuracy of 97.10%
+train ANN (MLP) with 20 epochs, giving accuracy of 69.50%
