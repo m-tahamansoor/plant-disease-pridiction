@@ -20,7 +20,7 @@ class PlantDiseaseClassifier(nn.Module):
         in_features = self.base_model.classifier[1].in_features
         
         self.classifier_head = nn.Sequential(
-            nn.Dropout(0.3), # Standard dropout before the classification layer
+            nn.Dropout(0.3), 
             nn.Linear(in_features, 256),
             nn.ReLU(),
             nn.Dropout(0.4),
